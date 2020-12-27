@@ -1,0 +1,380 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Float Clear */
+
+.cf:before,
+.cf:after {
+    content: "";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+
+/* Japan Suit */
+
+html,
+body {
+    height: 1000px;
+}
+
+body {
+    background-image: url(gaming-pattern.png);
+    font-family: monospace;
+}
+
+h1 {
+    font-size: 40pt;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 0 gray, 1px 0 1px gray, 0 1px 1px gray, -2px 1px 0 white, -2px -2px 0 #aaaaaa, 0.4345px -0.45353px 0 #aaaaaa;
+    margin: 10px 0;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 11pt;
+    text-align: center;
+}
+
+.container {
+    width: 650px;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+}
+
+.area-bot {
+    z-index: 0;
+    float: right;
+    width: 250px;
+    height: 560px;
+    background-color: salmon;
+    margin: auto 5px;
+    background: linear-gradient(to bottom, rgb(253, 142, 198) 0%, rgb(240, 108, 104) 100%);
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 40px 40px 40px 40px;
+}
+
+.area-player {
+    z-index: 0;
+    float: left;
+    width: 250px;
+    height: 560px;
+    margin: auto 5px;
+    background-color: skyblue;
+    background: linear-gradient(to bottom, rgb(217, 250, 250) 0%, rgb(148, 214, 245) 100%);
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 40px 40px 40px 40px;
+}
+
+.info {
+    z-index: 1;
+    width: 150px;
+    height: 60px;
+    border: 5px solid rgb(104, 218, 253);
+    position: absolute;
+    left: 50%;
+    margin-left: -80px;
+    top: 50%;
+    margin-top: 240px;
+    background-color: lightcyan;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 60px;
+    color: rgb(93, 101, 210);
+    font-size: 26px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+}
+
+.img-bot {
+    position: absolute;
+    bottom: 206px;
+    right: 0;
+    left: 0;
+}
+
+ul {
+    padding-top: 57px;
+    padding-left: 25px;
+}
+
+li {
+    display: inline-block;
+    margin: 0 18px;
+}
+
+img {
+    width: 130px;
+    height: 130px;
+    display: block;
+    margin: 5px auto;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.gunting,
+.batu,
+.kertas {
+    transition: .3s;
+    position: relative;
+    top: 0;
+    cursor: pointer;
+}
+
+.gunting:hover,
+.batu:hover,
+.kertas:hover,
+.active {
+    box-shadow: 0 0 10px 5px limegreen;
+}
+
+.gunting:active,
+.batu:active,
+.kertas:active {
+    top: 2px;
+}
+
+.area-bot .box {
+    z-index: 0;
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 10px;
+    color: white;
+    background-color: lightseagreen;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+}
+
+.area-bot .skorComp {
+    z-index: 0;
+    position: absolute;
+    top: 2%;
+    right: 42px;
+}
+
+.area-bot .skorPlayer {
+    z-index: 0;
+    position: absolute;
+    top: 2%;
+    right: 435px;
+}
+
+.area-bot .skorComp::before {
+    content: 'Bot : ';
+}
+
+.area-bot .skorPlayer::before {
+    content: 'Player : ';
+}
+
+.who-win {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.notif-hasil {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 2px 8px 20px rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    font-size: 20px;
+    line-height: 300px;
+    text-align: center;
+}
+
+.notif-hasil button {
+    color: white;
+    border: 2px solid white;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.8);
+    transform: scale(1) translateY(0);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.notif-hasil button:hover {
+    background-color: white;
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.8);
+}
+
+.cobaLagi {
+    position: absolute;
+    top: 80%;
+    left: 42%;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    left: 22%;
+    top: 80%;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: rgba(255, 0, 0, 0.6);
+}
